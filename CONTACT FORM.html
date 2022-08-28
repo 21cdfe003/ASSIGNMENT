@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body 
+{
+    background-image:url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+{font-family: Georgia, Times, 'Times New Roman', serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px darkmagenta;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:black;
+  color: navajowhite;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text] {
+  background-color:black;
+  color: navajowhite;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text] {
+  background-color:black;
+  color: navajowhite;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+input[type=submit]:hover {
+  background-color:rgba(109, 93, 86, 0.2);
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+    
+
+
+
+</style>
+</head>
+<body>
+  <h1 style="text-align:center;">Contact form </h1>
+  <marquee><font size=15><body text="black"><h6>Please fill in your information !!!</h6></font></marquee>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Australia">AUSTRALIA</option>
+      <option value="BANGLADESSH">BANGLADESSH</option>
+      <option value="FRANCE">FRANCE</option>
+      <option value="AUSTRIA">AUSTRIA</option>
+      <option value="GERMANY">GERMANY</option>
+      <option value="usa">USA</option>
+      <option value="INDIA">INDIA</option>
+      <option value="ALGERIA">ALGERIA</option>
+      <option value="GREECE">GREECE</option>
+      <option value="CHINA">CHINA</option>
+      
+    </select>
+    <div class="row">
+        <label class="required" for="emaiil">Your email:</label><br />
+        <input id="name" class="input" name="email" type="text" value="" size="30"/><br />
+        <span id="email_validation" class="error_message"></span>
+    </div>
+    <br>
+    <label> Your phone number</label>
+<td><tr>
+    <input name="phone number"type="text" max lenght="43" style="width:100%; max width:250 px;"/>
+
+</td></tr>
+<div class="row">
+    <label for="Your message">Your message</label>
+    <textarea id="Your message" name="Your message" placeholder="Write something.." style="height:100px"></textarea>
+    </div>
+  <div class ="col">
+    <legend><h5> Contct us via</h5></legend><div class="col">
+        
+      </div>
+
+      <div class="col">
+        <div class="form-check form-check">
+          <input class="form-check-input" type="radio" name="byemail" id="byemail" value="email" checked>
+          <label class="form-check-label" for="byemail">Email</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="radio" name="byphone" id="byphone" value="phone">
+          <label class="form-check-label" for="phone">Phone</label>
+        </div>
+        <div class="form-check form-check">
+          <input class="form-check-input" type="radio" name="dont" id="dont" value="dont">
+          <label class="form-check-label" for="dont">Don't contact me</label>
+        </div>
+      </div>
+  </div>
+</fieldset>
+</div>
+
+<button type="submit" class="btn btn-primary float-right">
+<i class="fa fa-paper-plane"></i> 
+Send
+</button>
+
+
+
+
+
+  </div>  
+  <br>
+  <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
